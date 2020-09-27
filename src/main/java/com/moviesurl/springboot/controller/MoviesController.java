@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.moviesurl.springboot.servicelayer.*;
 
 @RestController
@@ -17,7 +18,12 @@ public class MoviesController {
 
 	@GetMapping("/GetMovie")
 	public List<MovieObject> GetMovie(MovieObject movie) {
+		try {
 			List<MovieObject> mlist = slayer.GetmovieObj(movie);
-			return mlist;		
+			return mlist;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 }

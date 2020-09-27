@@ -13,7 +13,7 @@ public class ListOfMoviesApplication extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(ListOfMoviesApplication.class);
 	}
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(ListOfMoviesApplication.class, args);
 	}
