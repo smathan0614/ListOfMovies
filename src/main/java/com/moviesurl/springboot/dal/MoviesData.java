@@ -25,7 +25,7 @@ public class MoviesData implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		template.update("INSERT INTO Movie(name,rating,rank,year,crew) VALUES('inserttest','6','600','1996','simple test')");
+		//template.update("INSERT INTO Movie(name,rating,rank,year,crew) VALUES('inserttest','6','600','1996','simple test')");
 	}
 
 	public List<MovieObject> getList(MovieObject movie) {
