@@ -18,12 +18,9 @@ public class MoviesController {
 
 	@GetMapping("/GetMovie")
 	public List<MovieObject> GetMovie(MovieObject movie) {
-		try {
-			List<MovieObject> mlist = slayer.GetmovieObj(movie);
-			return mlist;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return null;
+		List<MovieObject> mlist = slayer.GetmovieObj(movie);
+//		if (mlist == null || mlist.isEmpty() == true)
+//			throw new MovieListException("About 0 search records");
+		return mlist;
 	}
 }
