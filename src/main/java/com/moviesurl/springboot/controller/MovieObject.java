@@ -18,7 +18,6 @@ public class MovieObject {
 		this.setRank(rank);
 		this.setYear(year);
 		this.setLink(link);
-
 	}
 
 	public String getName() {
