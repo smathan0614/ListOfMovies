@@ -10,7 +10,6 @@
 	</parent>
 	<groupId>com.moviesurl.springboot</groupId>
 	<artifactId>ListOfMovies</artifactId>
-	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ListOfMovies</name>
 	<description>Demo project for Spring Boot</description>
@@ -60,6 +59,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>movie-list-docker</finalName>
 	</build>
-
 </project>
